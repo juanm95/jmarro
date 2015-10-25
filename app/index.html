@@ -21,19 +21,49 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="stylesheet" href="styles/main.css">
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="bower_components/paper-card/paper-card.html">
-  <style is="custom-style" include="shared-styles"></style>
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="bower_components/paper-menu/paper-menu.html">
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
+
+  <style is="custom-style" include="shared-styles"></style>
 </head>
 
-<body unresolved class="fullbleed layout vertical">
+<body unresolved class="fullbleed layout vlink="" ertical" style="text-align: center">
   <!-- build:js scripts/app.js -->
-  <paper-card heading="Convert times to 26.5 meters.">
-  <div class="card-content">Some content</div>
-    <div class="card-actions">
-      <paper-button>Some action</paper-button>
-    </div>
-  </paper-card>
-  <!-- endbuild-->
+  <h1>Convert times to</h1>
+  <h1>26.5 meter time</h1>
+  <paper-input label="Distance you swam" style="width:60%; display:inline-block" id="distance">
+</paper-input>
+<paper-dropdown-menu label="Units" style="width:30%; display:inline-block" id="units">
+<paper-menu class="dropdown-content">
+<paper-item label="Yards">Yards</paper-item>
+<paper-item>Meters</paper-item>
+</paper-menu>
+</paper-dropdown-menu>
+<br/>
+In
+<br/>
+<paper-input-container style="width:20%; display:inline-block" id="minutes">
+<label>Minutes</label>
+<input is="iron-input" maxlength="2" size="2" aria-label="Minutes" class="style-scope paper-input-input"/>
+</paper-input-container>
+:
+<paper-input-container style="width:20%; display:inline-block" id="seconds">
+<label>Seconds</label>
+<input is="iron-input" maxlength="2" size="2" aria-label="Seconds" class="style-scope paper-input-input"/>
+</paper-input-container>
+<br/>
+<paper-button raised style="color: white; background-color: blue;" id="convert">
+Convert
+</paper-button>
+<paper-card style="margin-top: 5%; margin-left:2%; margin-right: 2%" id="card">
+<p id="response">Your time for a 26.5 meter race would be: <span id="result">36 minutes and 25 seconds</span> congratulations!</p>
+</paper-card>
+<!-- endbuild-->
+<script src="scripts/app.js"></script>
 </body>
-
 </html>
