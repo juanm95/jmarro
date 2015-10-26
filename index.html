@@ -17,54 +17,59 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
   <title>Polymer Starter Kit</title>
-  <!-- Place favicon.ico in the `app/` directory -->
-
-  <!-- Chrome for Android theme color -->
   <meta name="theme-color" content="#2E3AA1">
-
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- Tile color for Win8 -->
-  <meta name="msapplication-TileColor" content="#3372DF">
-
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="PSK">
-  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
-  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-  <!-- Tile icon for Win8 (144x144) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-
-  <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild-->
-
-  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-  <!-- endbuild -->
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="bower_components/paper-menu/paper-menu.html">
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
-  <!-- will be replaced with elements/elements.vulcanized.html -->
-  <link rel="import" href="elements/elements.html">
-  <!-- endreplace-->
 
-  <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
-
 </head>
 
-<body unresolved class="fullbleed layout vertical">
+<body unresolved class="fullbleed layout vlink="" ertical" style="text-align: center">
   <!-- build:js scripts/app.js -->
-  <paper-card heading="Convert times to 26.5 meters.">
-  </paper-card>
-  <script src="scripts/app.js"></script>
-  <!-- endbuild-->
-</body>
+  <h1>SCP Time Converter</h1>
+  <paper-input label="Distance you swam" style="width:60%; display:inline-block" id="distance">
+  </paper-input>
 
+  <paper-dropdown-menu label="Units" style="width:30%; display:inline-block" id="units">
+    <paper-menu class="dropdown-content">
+      <paper-item>Yards</paper-item>
+      <paper-item>Meters</paper-item>
+    </paper-menu>
+  </paper-dropdown-menu>
+
+  <br/>
+  In
+  <br/>
+  <paper-input-container style="width:20%; display:inline-block">
+  <label>Minutes</label>
+  <input id="minutes" is="iron-input" maxlength="2" size="2" aria-label="Minutes" class="style-scope paper-input-input"/>
+  </paper-input-container>
+  :
+  <paper-input-container style="width:20%; display:inline-block" >
+  <label>Seconds</label>
+  <input id="seconds" is="iron-input" maxlength="2" size="2" aria-label="Seconds" class="style-scope paper-input-input"/>
+  </paper-input-container>
+  .
+  <paper-input-container style="width:20%; display:inline-block">
+  <label>Centi</label>
+  <input id="centi" is="iron-input" maxlength="2" size="2" aria-label="Centi" class="style-scope paper-input-input"/>
+  </paper-input-container>
+  <br/>
+  <paper-button raised style="color: white; background-color: blue;" id="convert">
+  Convert
+  </paper-button>
+  <paper-card style="margin-top: 5%; margin-left:2%; margin-right: 2%" id="card">
+  <p id="response">Your time for <span id="repeatDistance"></span> at SCP would be: <span id="result"></span> congratulations!</p>
+  </paper-card>
+  <!-- endbuild-->
+  <script src="scripts/app.js"></script>
+</body>
 </html>
