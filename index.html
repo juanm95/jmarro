@@ -16,74 +16,43 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
+  <title>SCP Time Converter</title>
   <meta name="theme-color" content="#2E3AA1">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/materialize.min.css">
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="font">
-  <link rel="import" href="bower_components/paper-card/paper-card.html">
-  <link rel="import" href="bower_components/paper-input/paper-input.html">
-  <link rel="import" href="bower_components/paper-button/paper-button.html">
-  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
-  <link rel="import" href="bower_components/paper-menu/paper-menu.html">
-  <link rel="import" href="bower_components/paper-item/paper-item.html">
-  <link rel="import" href="bower_components/iron-input/iron-input.html">
-  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="scripts/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
   <style is="custom-style" include="shared-styles"></style>
 </head>
 
-<body unresolved class="fullbleed layout vlink="" ertical" style="text-align: center">
-  <!-- build:js scripts/app.js -->
+<body>
   <h1>SCP Time Converter</h1>
-  <paper-input label="Distance you swam" style="width:60%; display:inline-block" prevent-invalid-input allowed-pattern="^[0-9]"id="distance">
-</paper-input>
-</input>
-<div class="row">
-<div class="input-field col s12">
-    <select>
-      <option value="Yards">Yards</option>
-      <option value="Meters">Meters</option>
-    </select>
-    <label>Units</label>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="Yards">Yards</option>
+            <option value="Meters">Meters</option>
+          </select>
+          <label>Units</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+    </form>
   </div>
-</div>
-    <label>Browser Select</label>
-    <select class="browser-default">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-<br/>
-In
-<br/>
-<paper-input-container style="width:20%; display:inline-block" auto-validate="true" prevent-invalid-input allowed-pattern="^[0-9]">
-<label>Minutes</label>
-<input id="minutes" is="iron-input" maxlength="2" size="2" aria-label="Minutes" class="style-scope paper-input-input"/>
-</paper-input-container>
-:
-<paper-input-container style="width:20%; display:inline-block" prevent-invalid-input allowed-pattern="^[0-9]">
-<label>Seconds</label>
-<input id="seconds" is="iron-input" maxlength="2" size="2" aria-label="Seconds" class="style-scope paper-input-input"/>
-</paper-input-container>
-.
-<paper-input-container style="width:20%; display:inline-block" prevent-invalid-input allowed-pattern="^[0-9]">
-<label>Centi</label>
-<input id="centi" is="iron-input" maxlength="2" size="2" aria-label="Centi" class="style-scope paper-input-input"/>
-</paper-input-container>
-<br/>
-<paper-button raised style="color: white; background-color: blue;" id="convert" prevent-invalid-input allowed-pattern="^[0-9]">
-Convert
-</paper-button>
-<paper-card style="margin-top: 5%; margin-left:2%; margin-right: 2%" id="resultCard">
-<p id="response">Your time for <span id="repeatDistance"></span> at SCP would be: <span id="result"></span> congratulations!</p>
-</paper-card>
-<!-- endbuild-->
-<script src="scripts/app.js"></script>
+  <!-- endbuild-->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="scripts/materialize.min.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
