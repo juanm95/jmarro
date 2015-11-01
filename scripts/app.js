@@ -1,5 +1,5 @@
 $(function() {
-
+    $('select').material_select();
     function underSixty(time) {
         return isNaN(time) || parseInt(time) < 60;
     }
