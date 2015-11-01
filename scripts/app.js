@@ -8,6 +8,7 @@ $(function() {
     console.log($("#distance").get(0));
     var distance = $("#distance").get(0).value;
     var minutes = parseInt($("#minutes").get(0).value);
+    if (isNaN(minutes)) minutes = 0;
     var seconds = parseInt($("#seconds").get(0).value);
     var centi = parseInt($("#centi").get(0).value);
     var multiplier;
