@@ -52,7 +52,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div class="row">
         <!-- TIME -->
         <div class="input-field col s4 jtime">
-          <input id="minutes" type="number" class="validate" min="0" oninput="twoChars('minutes')" onkeydown="numOnly(event, 'minutes')">
+          <input pattern="[0-9]"id="minutes" type="number" class="validate" min="0" oninput="twoChars('minutes')" onkeydown="numOnly(event, 'minutes')">
           <label for="minutes" data-error="Positive only">Minutes</label>
         </div>
         <div class="input-field col s4 jtime">
