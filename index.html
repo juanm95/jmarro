@@ -39,11 +39,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div class="row">
         <!-- DISTANCE -->
         <div class="input-field col s8">
-          <input type="number" name="distance" id="distance">
+          <input pattern="^([0-9]*\.[0-9]+)|^([0-9]+)" type="text" name="distance" id="distance" class="validate" required>
           <label for="distance">Distance</label>
         </div>
         <div class="input-field col s4">
-          <select class="browser-default">
+          <select class="browser-default" id="units">
             <option value="Yards">Yards</option>
             <option value="Meters">Meters</option>
           </select>
@@ -52,31 +52,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div class="row">
         <!-- TIME -->
         <div class="input-field col s4 jtime">
-          <input pattern="[0-9]"id="minutes" type="number" class="validate" min="0" oninput="twoChars('minutes')" onkeydown="numOnly(event, 'minutes')">
-          <label for="minutes" data-error="Positive only">Minutes</label>
+          <input pattern="[0-9]" id="minutes" type="number" class="validate" min="0" max="99" oninput="twoChars('minutes')">
+          <label for="minutes" data-error="Numbers only">Minutes</label>
         </div>
         <div class="input-field col s4 jtime">
-          <input id="seconds" type="number" class="validate" max="59" min="0"  maxlength="2" oninput="twoChars('seconds')">
+          <input pattern="[0-9]" id="seconds" type="number" class="validate" max="59" maxlength="2" oninput="twoChars('seconds')" required>
           <label for="seconds" data-error="0-59">Seconds</label>
         </div>
         <div class="input-field col s4 jtime">
-          <input id="centi" type="number" class="validate" max="99"  maxlength="2" oninput="twoChars('centi')">
+          <input pattern="[0-9]" id="centi" type="number" class="validate" maxlength="2" oninput="twoChars('centi')" required>
           <label for="centi" data-error="0-99">Centi</label>
         </div>
       </div>
+      <div class="row">
+      </div>
       <div class="row" style="text-align:center">
-        <button class="btn waves-effect waves-light" type="submit" name="action">Convert
+        <button class="btn waves-effect waves-light" id="convert" type="submit" name="action">Convert
           <i class="material-icons right">repeat</i>
         </button>
       </div>
     </form>
   </div>
   <!-- OUTPUT -->
-  <div class="row">
+  <div class="row" id="resultCard">
     <div class="col s12 m6">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <p>Using the Seminole City Pool's measurements, your 25 meter swim would have taken 1 minute, 20 seconds.</p>
+          <p>Using the Seminole City Pool's measurements, your <span id="repeatDistance"></span> swim would have taken <span id="result"></span>.</p>
           </div>
         </div>
       </div>
@@ -86,12 +88,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <script src="scripts/materialize.min.js"></script>
     <script src="scripts/app.js"></script>
     <script type="text/javascript">
-    function numOnly(event, id) {
-      var elem = document.getElementById(id);
-      if (!(event.which >= 47 && event.which <= 57)) {
-        event.preventDefault();
-      }
-    }
       function twoChars(id) {
         var elem = document.getElementById(id)
         console.log(elem.value);
