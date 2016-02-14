@@ -8,11 +8,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 */
 
 body {
-  background: #fafafa;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  background: #d5f0f6;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:  #005395;
 }
 
-#resultCard {
-  visibility: hidden;
+.input-field > select {
+		font-weight: 700;
+    width: 80%;
+    padding: 0px 0px;
+    margin: 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d5f0f6;
+}
+
+option {
+	font-weight: 700;
+	font-size: x-large;
 }
