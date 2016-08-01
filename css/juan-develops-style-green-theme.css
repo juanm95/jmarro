@@ -1,0 +1,166 @@
+body {
+	background-color: rgba(0, 38, 37, 256);
+	font-family: 'Lato', sans-serif;
+	color: white;
+	font-weight: 300;
+	font-size: 250%;
+	position: relative;
+}
+p, a {
+	font-size: 1em;
+}
+h2 {
+	font-size: 1.8em;
+}
+a {
+	color: rgba(126, 211, 33, 256);
+}
+li > a {
+	color: white;
+}
+nav {
+	background-color: transparent;
+}
+span.jmgreen {
+	color: rgba(126, 211, 33, 256);
+}
+#juan {
+	font-weight: 900;
+	font-size: 4em;
+	text-transform: uppercase;
+}
+#marroquin {
+	margin-left: -.05em;
+	letter-spacing: -.05em;
+	font-weight: 100;
+	font-size: 4.2em;
+	text-transform: uppercase;
+}
+.jmcard {
+	position: relative;
+	margin: auto;
+	width: 96%;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	min-height: 92vh;
+	border: 1px solid;
+	border-color: rgba(126, 211, 33, 256);
+	border-radius: 50px;
+}
+.SplashContainer {
+	position: relative;
+	text-align: center;
+}
+.jmcard-text {
+	position: relative;
+	top: 50vh;
+	transform: translateY(-50%);
+}
+.bigj {
+	margin-left: 50px;
+	margin-right: -3px;
+	font-weight: 700;
+	font-size: 1.8em;
+}
+.bigm {
+	font-size: 1.87em;
+	font-weight: 100;
+}
+.jmenu a {
+}
+.jmenu {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	background-color:	rgba(0, 38, 37, 256);
+	width: 100%;
+	border-bottom-color: rgba(126, 211, 33, 256);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	z-index: 15;
+}
+#jactual{
+	display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#jplaceholder.invisible {
+	visibility: hidden;
+}
+.jcompensate {
+	/*margin-bottom: 101px;*/
+}
+.jtabs{
+	position: absolute;
+	bottom: 0;
+	right: 1%;
+	margin-top: 4px;
+}
+.jtabs a {
+	background-color: rgba(0, 38, 37, 256);
+	margin-left: -5px;
+	border-style: solid;
+	border-color: rgba(126, 211, 33, 256);
+	border-width: 1px;
+	border-bottom-width: 0px;
+	padding: 5px;
+	padding-bottom: 0px
+	font-size: 1em;
+}
+.jcontent .row {
+	margin-bottom: 75px;
+}
+img {
+	max-height: 70vh;
+}
+.sticky {
+	position: fixed;
+	left: 100px;
+	top: 50vh;
+}
+#sideContentAnchor {
+	position: fixed;
+	top: 30vh;
+	left: 54.60px;
+}
+.sideContent {
+	position: absolute !important;
+	top: 0vh;
+}
+.nav > li {
+	visibility: hidden;
+}
+.nav > li.active {
+	visibility: visible;
+}
+.nav >li.active > a:hover {
+	cursor: default;
+}
+.jtabs > a:hover {
+	background-color: rgba(126, 211, 33, 256);
+	color: rgba(0, 38, 37, 256);
+}
+#jscroll {
+	position: relative;
+	text-align: center;
+	top: -10vh;
+	display:none;
+}
+.carousel-caption {
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+.carousel-inner {
+	height: 76vh;
+}
+.carousel-indicators	 {
+	bottom: -5vh;
+	z-index: 14;
+}
+.carousel-inner > .item > img {
+	margin-right: auto;
+	margin-left: auto;
+}
