@@ -3,6 +3,7 @@ body {
     color: black;
     font-weight: 300;
     position: relative;
+    background-color: ghostwhite;
 }
 
 p,
@@ -22,11 +23,10 @@ nav {
     background-color: transparent;
 }
 
-span.jmgreen {
-    /*	color: rgba(126, 211, 33, 256);*/
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
-
 /******************* TITLE CARD STUFF **********************/
 
 #juan {
@@ -44,25 +44,25 @@ span.jmgreen {
 }
 
 .jmcard {
-    position: relative;
+    border-radius: 5vmin;
     margin: auto;
-    width: 88%;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    min-height: 80vh;
-    border-radius: 50px;
+    height: 52vmin;
+    width: 90vmin;
     background-image: url("../img/business-card-back.jpg");
     box-shadow: 2px 2px 5px grey;
+    
 }
 
 .SplashContainer {
     position: relative;
     text-align: center;
+    width: 100%;
+    z-index: -1;
 }
 
 .jmcard-text {
     position: relative;
-    top: 40vh;
+    top: 26vmin; /* top must be half of the height of jmcard */
     transform: translateY(-50%);
 }
 
@@ -79,6 +79,12 @@ span.jmgreen {
     -moz-background-clip: text;
     background-clip: text;
 }
+
+#placeholder {
+    visibility: hidden;
+    margin-bottom: 77px;
+}
+
 
 
 /******************* TITLE CARD STUFF END **********************/
@@ -160,8 +166,9 @@ span.jmgreen {
 }
 
 .code-font {
-    font-family: "Courier New", monospace;
-    letter-spacing: -.05em;
+/*    font-family: "Courier New", monospace;*/
+/*    letter-spacing: -.05em;*/
+    font-weight: 300;
 }
 
 
@@ -169,10 +176,6 @@ span.jmgreen {
 
 .jcontent .row {
     margin-bottom: 75px;
-}
-
-img {
-    max-height: 70vh;
 }
 
 .sticky {
@@ -236,21 +239,24 @@ img {
     margin-left: auto;
 }
 
-#placeholder {
-    visibility: hidden;
-    margin-bottom: 77px;
-}
-
-#jtop {
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-}
-
 .content-backing {
-    background-color: antiquewhite;
+    background-color: #D1DBBD;
 }
 
 .paper-back {
     background-image: url("../img/white-paper-texture.jpg");
+}
+
+.text-box {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #193441;
+    background-color: #FCFFF5;
+    padding: 10px;
+}
+.splash-positioning {
+    position: relative;
+    top: 315px;
+    transform: translateY(-50%);
 }
