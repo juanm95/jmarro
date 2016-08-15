@@ -1,280 +1,177 @@
-<!doctype html>
-<!--
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
-<html lang="">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Polymer Starter Kit" />
-  <title>SCP Time Converter</title>
-  <meta name="theme-color" content="#2E3AA1">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/materialize.min.css">
-  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style is="custom-style" include="shared-styles"></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,900,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,900,800,700,200,300' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--    <link href="css/bootstrap-theme.css" rel="stylesheet">-->
+    <link href="css/juan-develops-style-white-theme.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <!-- TITLE -->
-  <div class="row"></div>
-  <div class="row">
-  	<div class="col s9">
-  		Seminole Length Time Converter
-  	</div>
-    <div class="col s3" style="text-align:center">
-      <img class="responsive-img"src="images/allcity.png">
+    <!--    Business Card-->
+    <div class="SplashContainer" id="jtop" style="height: 630px">
+        <div class="center" style="position: fixed; width: 100%">
+            <div class="jmcard splash-positioning">
+                <div class="jmcard-text">
+                    <div class="row text-center">
+                        <span class="inset-text" id="juan">Juan</span>
+                        <span class="jmgreen inset-text title what-i-do">{Develops}</span>
+                    </div>
+                    <br/>
+                    <h2> Computer Science ‘17 | Stanford</h2>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--Business Card End-->
+    <!--NavBar-->
+    <nav class="jmenu" id="jactual">
+        <div class="jtabs">
+            <a href="#about-me">ABOUT ME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="/img/Juan%20Marroquin%20Resume.pdf" target="_blank">RESUME&#769</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <nav class="jmenu" id="jplaceholder">
+        <div class="jtabs">
+            <a href="#about-me">ABOUT ME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="/img/Juan%20Marroquin%20Resume.pdf" target="_blank">RESUME&#769</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+    <!--NavBar End-->
+    <!--    Start of actual content -->
+    <div class="content-backing">
+        <div class="container">
+            <div id="about-me" class="row">
+                <h1 class="text-center">About Me</h1>
+                <img class="col-xs-12 col-md-offset-1 col-md-3" src="img/PicturesOfMe/BizCasual.JPG">
+                <div class="col-xs-12 col-md-offset-1 col-md-7 text-box">
+                    <p class="drop-capped">My name is Juan Marroquin, and I’m a Stanford-trained Computer Scientist with a concentration in HCI. </p>
+                    <p class="">My exposure to computers began, like many millennial Computer Scientists, with video games, so naturally some of my greatest joys have been as a result of putting things on a screen.</p>
+                </div>
+            </div>
+            <div id="portfolio">
+                <h1 class="text-center">Portfolio</h1>
+                <div id="atelier" class="row">
+                    <h2 class="text-center">Atelier <span class="code-font">{MicroInternship Research}</span></h2>
+                    <img class="col-xs-12 col-md-7" src="img/Atelier/overView.png">
+                    <div class="col-xs-offset-1 col-xs-11 col-md-offset-0 col-md-5">
+                        <div class="row">
+                            <a class="text-center center-block" href="http://dl.acm.org/citation.cfm?id=2858121&CFID=823339788&CFTOKEN=62939183">
+                                <div class="col-xs-3 col-md-3">
+                                    <img class="img-responsive row center-block" src="img/Atelier/chilogoshadow.png"> View Paper
+                                </div>
+                            </a>
+                            <a class="text-center center-block" href="https://github.com/StanfordHCI/atelier">
+                                <div class="col-xs-3 col-md-3">
+                                    <img class="img-responsive row center-block" src="img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png"> View Code
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row text-box">
+                            <h4>About Atelier:</h4>
+                            <p>Atelier as a paper posed the question: what does the crowd work equivalent of an internship look like? In order to answer this question, me and other members of Stanford’s HCI Lab designed a platform for such interactions to take place and measured the effectiveness of these internships based on how much crowd worker interns learned from their crowd worker mentors as well as the quality of their end work. Our findings show that…</p>
+                            <h4>My Role:</h4>
+                            <p>As part of the team I did a number of things ranging from implementation, to design, to reading previous research papers. From my time doing research I learned a lot from my Professor Micahel Bernstein. Most importantly was how to build a prototype</p>
+                            <!--                            <h4>What I Learned:</h4>-->
+                        </div>
+                    </div>
+                </div>
+                <div id="eatventure" class="row">
+                    <h2 class="text-center">EatVenture <span class="code-font">{An Experiment in Serendipity}</span></h2>
+                    <div class="col-xs-6 col-md-3">
+                        <img class="img-responsive" src="img/eatventure/menu-screen.PNG">
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <img class="img-responsive" src="img/eatventure/IMG_0276.PNG">
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-11 col-md-offset-1 col-md-5">
+                        <div class="row">
+                            <a class="text-center center-block" href="http://scottcheng.github.io/adventure/">
+                                <div class="col-xs-3 col-md-3">
+                                    <img class="img-responsive row center-block" src="img/eatventure/logo.png" style="background-color: purple;padding: 14px;border-radius: 14px;"> Prototype
+                                </div>
+                            </a>
+                            <a class="text-center center-block" href="https://github.com/scottcheng/adventure">
+                                <div class="col-xs-3 col-md-3">
+                                    <img class="img-responsive row center-block" src="img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png"> View Code
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row text-box">
+                            <h4>About EatVenture:</h4>
+                            <p>EatVenture is a project that I worked on for an HCI Design Studio class at Stanford with on a team of three people. EatVenture is a mobile web app built with React and the Google Maps and Yelp APIs that chooses a random restaurant for the user and then navigates them to that restaurant. Inspired by my own tendencies to read too much into online reviews, EatVenture differentiates itself by hiding the end destination from the users until they are literally standing in front of the restaurant.</p>
+                            <h4>My Role:</h4>
+                            <p>As a design project, my greatest responsibility was to brainstorm with the rest of my team to actually come up with the idea, flesh out the ideas, and perform user studies. To test the concept we found couples to volunteer their date night to us and then we followed them around sending them text messages containing directions to their destination in order to simulate the functionality of the application. In our brainstorming session my role was to advocate for hiding as much information from the user while crucially making them feel like their plans are in good hands.</p>
+                            <!--                            <h4>What I Learned:</h4>-->
+                            <!--                            <p>One of the things I learned here was that the Google Maps API does NOT want you to make something "like" google maps, especially not for free. In programming the just-in-time navigation I was hoping I could just use the Google Maps API to let me know when a user wandered off-course, but Google Maps doesn't actually offer live navigation as part of their API. Instead, what I had to do was query for the user's location periodically </p>-->
+                        </div>
+                    </div>
+                </div>
+                <div id="lawgrid" class="row">
+                    <h2 class="text-center">LawGrid <span class="code-font">{Visualizing and Web Scraping}</span></h2>
+                    <img class="col-xs-12 col-md-7" src="img/LawGrid/LawGridOverlap.png">
+                    <div class="col-xs-offset-1 col-xs-11 col-md-offset-0 col-md-5">
+                        <div class="row">
+                            <img class="col-xs-3 col-md-3" src="img/Atelier/chilogoshadow.png">
+                        </div>
+                        <div class="row text-box">
+                            <h4>About LawGrid:</h4>
+                            <p>LawGrid is a visualization tool that I designed with two other class mates for a Data Visualization class that is intended to aid in seeing the connections between court cases of interest. This project was inspired by previous work by Aleks Aris and Ben Schneiderman on data exploration. Unlike other existing legal visualization tools such as Ravel and JustCite, LawGrid offers users with a way of filtering out the irrelevant data by having the user start off with cases that they are already interested in and only showing other potentially relevant data points when the user requests them.</p>
+                            <h4>My Role:</h4>
+                            <p>Like with the other design projects here, I contributed to the team and project through brainstorming sessions and applying my experience in designing interfaces and my newly gained knowledge in data visualization to shape the design. On top of using our own instincts, we collaborated extensively with law students to find out how a visualization tool could aid them. In addition to this my major role was in scraping CaseText, a free website that offered the citation data we would need to make connections. I did this scraping using a combination of a custom chrome extension and python script. Because CaseText uses Angular, I was unable to simply use a headless browser or simply ask for the HTML, so I eventually settled on this dirty solution. </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cucumber" class="row">
+                    <h2 class="text-center">BDD, Gherkin, and Cucumber-js<span class="code-font">{A step beyond Test Driven}</span></h2>
+                    <img class="col-xs-12 col-xs-offset-0 col-md-5 col-md-offset-1" src="img/cucumber/cucumber-js-logo.png">
+                    <div class="col-xs-offset-1 col-xs-11 col-md-offset-1 col-md-5">
+                        <div class="row">
+                        </div>
+                        <div class="row text-box">
+                            <h4>About BDD, Gherkin, and Cucumber-js</h4>
+                            <p>Full discolsure, BDD, Gherkin, and Cucumber-js themselves are NOT my own creation, instead I <i>pioneered</i> them as part of my internship at Citigroup. BDD (short for Behavior Driven Development) is a style of software development akin to Test Driven Development with the crucial distinction that effort put towards making entire <i>features</i> of a product work rather than focusing on unit testing (though BDD is often paired with unit testing for completion sake). The beauty of BDD is the language that it uses, Gherkin, which is a plain text structured language that allows developers and stakeholders to more clearly communicate about what exact features a developed product should deliver. Using this structured language opens an organization to living documentation, a framework for testing (in my case Cucumber-js), and the ability to save time by focusing precisely on the desired functionality</p>
+                            <h4>My Role:</h4>
+                            <p>Being the pioneer of BDD within my team, I had the responsibility of setting a good example of how BDD could be used realistically. I spoke to my manager in order to transcribe the features of a page into a Gherkins file. Afterwards I spoke to an authority within Citigroup on BDD to get some feedback. After I iterated on my Gherkin feature files, I got to work implementing the tests. For this I used selenium-webdriver, cucumber-js, and the Chai assertion library in order to have tests that were almost as readable as the Gherkins files themselves. At the end of my internship I presented our new capabilities and passed on responsibilities of the framework to a new full time worker, which was easy thanks to some well documented code ;).</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact" class="row">
+                    <h2 class="text-center">Contact Me!</h2>
+                    <p class="text-box col-md-4">If all this looks good and you're ready to chat about how I can be of service to you, drop me a line!</p>
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="jmcard" style="margin-bottom: 20px">
+                            <div class="jmcard-text">
+                                <div class="row text-center">
+                                    <span class="inset-text" id="juan">Juan</span>
+                                    <span class="jmgreen inset-text title what-i-do">{Develops}</span>
+                                </div>
+                                <br/>
+                                <h3 class="text-center">Email: <a href="mailto:juanm95@stanford.edu?Subject=We are interested in you!">juanm95@stanford.edu</a></h2>
+                                <h3 class="text-center">Cell: 1 (818) 268-5636</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- DATA INPUT -->
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <!-- DISTANCE -->
-        <div class="col s12">
-        	<a1>DISTANCE</a1>
-        </div>
-        </div>
-        <div class="row">
-        <div class="input-field col s6">
-          <select class="browser-default" id="distance">
-            <option value="25">25</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200">200</option>
-          </select>
-        </div>
-        <div class="input-field col s6">
-          <select class="browser-default" id="units">
-            <option value="Meters">Meters</option>
-            <option value="Yards">Yards</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-        	<a1>TIME</a1>
-        </div>
-        </div>
-      <div class="row">
-        <!-- TIME -->
-        <div class="input-field col s4 jtime">
-          <select class="browser-default" id="minutes">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-          </select>Min
-        </div>
-        <div class="input-field col s4 jtime">
-          <select class="browser-default" id="seconds">
-            <option value="0">00</option>
-						<option value="1">01</option>
-						<option value="2">02</option>
-						<option value="3">03</option>
-						<option value="4">04</option>
-						<option value="5">05</option>
-						<option value="6">06</option>
-						<option value="7">07</option>
-						<option value="8">08</option>
-						<option value="9">09</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						<option value="13">13</option>
-						<option value="14">14</option>
-						<option value="15">15</option>
-						<option value="16">16</option>
-						<option value="17">17</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-						<option value="21">21</option>
-						<option value="22">22</option>
-						<option value="23">23</option>
-						<option value="24">24</option>
-						<option value="25">25</option>
-						<option value="26">26</option>
-						<option value="27">27</option>
-						<option value="28">28</option>
-						<option value="29">29</option>
-						<option value="30">30</option>
-						<option value="31">31</option>
-						<option value="32">32</option>
-						<option value="33">33</option>
-						<option value="34">34</option>
-						<option value="35">35</option>
-						<option value="36">36</option>
-						<option value="37">37</option>
-						<option value="38">38</option>
-						<option value="39">39</option>
-						<option value="40">40</option>
-						<option value="41">41</option>
-						<option value="42">42</option>
-						<option value="43">43</option>
-						<option value="44">44</option>
-						<option value="45">45</option>
-						<option value="46">46</option>
-						<option value="47">47</option>
-						<option value="48">48</option>
-						<option value="49">49</option>
-						<option value="50">50</option>
-						<option value="51">51</option>
-						<option value="52">52</option>
-						<option value="53">53</option>
-						<option value="54">54</option>
-						<option value="55">55</option>
-						<option value="56">56</option>
-						<option value="57">57</option>
-						<option value="58">58</option>
-						<option value="59">59</option>
-          </select>Sec
-        </div>
-        <div class="input-field col s4 jtime">
-          <select class="browser-default" id="milliseconds">
-            <option value="0">.00</option>
-						<option value="1">.01</option>
-						<option value="2">.02</option>
-						<option value="3">.03</option>
-						<option value="4">.04</option>
-						<option value="5">.05</option>
-						<option value="6">.06</option>
-						<option value="7">.07</option>
-						<option value="8">.08</option>
-						<option value="9">.09</option>
-						<option value="10">.10</option>
-						<option value="11">.11</option>
-						<option value="12">.12</option>
-						<option value="13">.13</option>
-						<option value="14">.14</option>
-						<option value="15">.15</option>
-						<option value="16">.16</option>
-						<option value="17">.17</option>
-						<option value="18">.18</option>
-						<option value="19">.19</option>
-						<option value="20">.20</option>
-						<option value="21">.21</option>
-						<option value="22">.22</option>
-						<option value="23">.23</option>
-						<option value="24">.24</option>
-						<option value="25">.25</option>
-						<option value="26">.26</option>
-						<option value="27">.27</option>
-						<option value="28">.28</option>
-						<option value="29">.29</option>
-						<option value="30">.30</option>
-						<option value="31">.31</option>
-						<option value="32">.32</option>
-						<option value="33">.33</option>
-						<option value="34">.34</option>
-						<option value="35">.35</option>
-						<option value="36">.36</option>
-						<option value="37">.37</option>
-						<option value="38">.38</option>
-						<option value="39">.39</option>
-						<option value="40">.40</option>
-						<option value="41">.41</option>
-						<option value="42">.42</option>
-						<option value="43">.43</option>
-						<option value="44">.44</option>
-						<option value="45">.45</option>
-						<option value="46">.46</option>
-						<option value="47">.47</option>
-						<option value="48">.48</option>
-						<option value="49">.49</option>
-						<option value="50">.50</option>
-						<option value="51">.51</option>
-						<option value="52">.52</option>
-						<option value="53">.53</option>
-						<option value="54">.54</option>
-						<option value="55">.55</option>
-						<option value="56">.56</option>
-						<option value="57">.57</option>
-						<option value="58">.58</option>
-						<option value="59">.59</option>
-						<option value="60">.60</option>
-						<option value="61">.61</option>
-						<option value="62">.62</option>
-						<option value="63">.63</option>
-						<option value="64">.64</option>
-						<option value="65">.65</option>
-						<option value="66">.66</option>
-						<option value="67">.67</option>
-						<option value="68">.68</option>
-						<option value="69">.69</option>
-						<option value="70">.70</option>
-						<option value="71">.71</option>
-						<option value="72">.72</option>
-						<option value="73">.73</option>
-						<option value="74">.74</option>
-						<option value="75">.75</option>
-						<option value="76">.76</option>
-						<option value="77">.77</option>
-						<option value="78">.78</option>
-						<option value="79">.79</option>
-						<option value="80">.80</option>
-						<option value="81">.81</option>
-						<option value="82">.82</option>
-						<option value="83">.83</option>
-						<option value="84">.84</option>
-						<option value="85">.85</option>
-						<option value="86">.86</option>
-						<option value="87">.87</option>
-						<option value="88">.88</option>
-						<option value="89">.89</option>
-						<option value="90">.90</option>
-						<option value="91">.91</option>
-						<option value="92">.92</option>
-						<option value="93">.93</option>
-						<option value="94">.94</option>
-						<option value="95">.95</option>
-						<option value="96">.96</option>
-						<option value="97">.97</option>
-						<option value="98">.98</option>
-						<option value="99">.99</option>
-          </select>Centi
-        </div>
-      </div>
-    </form>
-          <div class="row" style="text-align:center">
-        <button data-target="resultCard" class="btn waves-effect waves-light" id="convert" type="submit modal-trigger" name="action" onclick="convertTimes()">Convert
-          <i class="material-icons right">repeat</i>
-        </button>
-      </div>
-  </div>
-  <div style="font-size: .8em; position: absolute; width: 100%; text-align: center; bottom: 10px">
- 		Seminole pool in Madison, WI is a 26.5 Meter pool
-  </div>
-  <!-- OUTPUT -->
-  <div class="modal" id="resultCard">
-        <div class="modal-content">
-          <p>Using the Seminole City Pool's measurements, your <span id="repeatDistance"></span> swim would have taken <span id="result"></span>.</p>
-          </div>
-        </div>
-    <!-- endbuild-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="scripts/materialize.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script>
-$(document).ready(function() {
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('.modal-trigger').leanModal();
-});
-</script>
-  </body>
-  </html>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

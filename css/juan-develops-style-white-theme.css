@@ -1,0 +1,262 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+    position: relative;
+    background-color: ghostwhite;
+}
+
+p,
+a {
+    font-size: 1em;
+}
+
+a {
+    /*	color: rgba(126, 211, 33, 256);*/
+}
+
+li > a {
+    color: black;
+}
+
+nav {
+    background-color: transparent;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/******************* TITLE CARD STUFF **********************/
+
+#juan {
+    font-weight: 900;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+#marroquin {
+    margin-left: -.05em;
+    letter-spacing: -.05em;
+    font-weight: 100;
+    font-size: 4.2em;
+    text-transform: uppercase;
+}
+
+.jmcard {
+    border-radius: 5vmin;
+    margin: auto;
+    height: 52vmin;
+    width: 90vmin;
+    background-image: url("../img/business-card-back.jpg");
+    box-shadow: 2px 2px 5px grey;
+    
+}
+
+.SplashContainer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+}
+
+.jmcard-text {
+    position: relative;
+    top: 26vmin; /* top must be half of the height of jmcard */
+    transform: translateY(-50%);
+}
+
+.what-i-do {
+    text-align: left;
+    font-size: 4em;
+}
+
+.inset-text {
+    background-color: black;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.3);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+#placeholder {
+    visibility: hidden;
+    margin-bottom: 77px;
+}
+
+
+
+/******************* TITLE CARD STUFF END **********************/
+
+
+/******************* NAV BAR STUFF **********************/
+
+.bigj {
+    margin-left: 50px;
+    margin-right: -3px;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.bigm {
+    font-size: 1.87em;
+    font-weight: 100;
+}
+
+.jmenu a {}
+
+.jmenu {
+    text-align: center;
+    /* Center the tabs horizontally */
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    z-index: 15;
+    box-shadow: 0px 2px 5px grey, 0px -2px 5px grey;
+}
+
+#jactual {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#jplaceholder.invisible {
+    visibility: hidden;
+}
+
+.jcompensate {
+    /*margin-bottom: 101px;*/
+}
+
+.jtabs {
+    bottom: 0;
+    right: 1%;
+    margin-top: 4px;
+}
+
+.jtabs a {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    font-size: 1em;
+}
+
+
+/*END TABS*/
+
+
+/*UTILITY FONTS*/
+
+.drop-capped:first-letter {
+    float: left;
+    color: #903;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: Georgia;
+}
+
+.code-font {
+/*    font-family: "Courier New", monospace;*/
+/*    letter-spacing: -.05em;*/
+    font-weight: 300;
+}
+
+
+/*END UTILITY FONTS*/
+
+.jcontent .row {
+    margin-bottom: 75px;
+}
+
+.sticky {
+    position: fixed;
+    left: 100px;
+    top: 50vh;
+}
+
+#sideContentAnchor {
+    position: fixed;
+    top: 30vh;
+    left: 54.60px;
+}
+
+.sideContent {
+    position: absolute !important;
+    top: 0vh;
+}
+
+.nav > li {
+    visibility: hidden;
+}
+
+.nav > li.active {
+    visibility: visible;
+}
+
+.nav >li.active > a:hover {
+    cursor: default;
+}
+
+.jtabs > a:hover {
+    background-color: rgba(126, 211, 33, 256);
+    color: rgba(0, 38, 37, 256);
+}
+
+#jscroll {
+    position: relative;
+    text-align: center;
+    top: -10vh;
+    display: none;
+}
+
+.carousel-caption {
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+.carousel-inner {
+    height: 76vh;
+}
+
+.carousel-indicators {
+    bottom: -5vh;
+    z-index: 14;
+}
+
+.carousel-inner > .item > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-backing {
+    background-color: #D1DBBD;
+}
+
+.paper-back {
+    background-image: url("../img/white-paper-texture.jpg");
+}
+
+.text-box {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #193441;
+    background-color: #FCFFF5;
+    padding: 10px;
+}
+.splash-positioning {
+    position: relative;
+    top: 315px;
+    transform: translateY(-50%);
+}
