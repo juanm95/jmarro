@@ -282,3 +282,8 @@ h3 {
     top: 45vh;
     transform: translateY(-50%);
 }
+
+.project-links img {
+    height: 10vh;
+    width: auto;
+}
